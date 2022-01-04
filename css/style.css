@@ -7,7 +7,7 @@
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 80.5%;
     /* font-family: 'Roboto', sans-serif; */
 }
 .body{
@@ -19,65 +19,6 @@ html {
     
 }
 
-li {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-}
-.header{
-    border-bottom: 1px solid #E2E8F0;
-    position: fixed;
-    width: 100%;
-    z-index: 999;
-    background-color: black;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 1.5rem;
-}
-.hamburger {
-    display: none;
-}
-
-.bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: #101010;
-}
-.nav-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav-item {
-    margin-left: 5rem;
-}
-
-.nav-link{
-    font-size: 1.6rem;
-    font-weight: 400;
-    color: #fff;
-}
-
-.nav-link:hover{
-    color: #ff7200;
-}
-
-.nav-logo {
-    font-size: 2.1rem;
-    font-weight: 500;
-    color: #ff7200;
-}
 
 .body .content{
     width: 80%;
@@ -241,80 +182,7 @@ a {
     color: white;
     margin-top: 200px;
 }
-footer{
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #000;
-    height: auto;
-    width: 100vw;
-    font-family:"poppins";
-    padding-top: 40px;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.footer-content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
-.footer-content h3{
-    font-size: 30px;
-    font-weight:500;
-    text-transform: capitalize;
-    line-height: 3rem;
-    color:#ff7200;
-} 
-.footer-content p{
-    color: #ffF;
-    max-width: 500px;
-    margin:10px auto;
-    line-height: 28px;
-    font-size: 14px;
-    font-family:roboto;
-} 
-.sociales{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 1rem 0 3rem 0;
-}
-.sociales li{
-    margin: 0 10px;
-}
-.sociales a{
-    font: size 50px;;
-    text-decoration:none;
-    color: #fff;
-}
-.sociales a i{
-    font-size: 1.1rem;
-    transition: color .4s ease;
-}
-.sociales a:hover i{
-    color:#ff7200;
-}
-.footer-bottom{
-    background: #000;
-    width: 45vh;
-    padding:20px 0;
-    text-align: center;
-}
-.footer-bottom p{
-    font-size: 14px;
-    word-spacing: 2px;
-    text-transform:capitalize;
-}
-.footer-bottom span{
-   text-transform: uppercase;
-   opacity: .4;
-   font-weight: 200;
-}
+
 
 
 
@@ -338,6 +206,7 @@ footer{
     
 }
 .div1{
+    
     width: 300px;;
     height: 200px;
     margin-bottom: 30px;
@@ -348,7 +217,8 @@ footer{
     
 }
 .section2{
-    width: 100vw;
+    width: 100%;
+    justify-content: center;
 }
 .section2 span{
     color: #ff7200;
@@ -357,7 +227,25 @@ footer{
     text-align: center;
     font-weight: bold;
     font-size: 50px;
+    margin: 10px 0 10px 0px;
 }
+.sectionClass span{
+    color: #ff7200;
+}
+.sectionClass h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+}
+.advantages span{
+    color: #ff7200;
+}
+.advantages h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+}
+
 
 
 
@@ -366,7 +254,15 @@ footer{
     text-align: center;
     color:white;
   }
-  
+  .container span{
+    color: #ff7200;
+}
+.container h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+}
+
   .texte_centrer {
    
     background-color: rgba(22, 20, 20, 0.5);
@@ -384,9 +280,11 @@ footer{
     flex-direction: column
   }
   .contenant img{
-      width: 100%;
-      height: 100%;
-      background-color: rgba(22, 20, 20, 0.5);
+    box-shadow: 0px 5px 18px rgb(0 0 0 / 15%);
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    background-color: rgba(22, 20, 20, 0.5);
   }
   .image__overlay{
       position: absolute;
@@ -422,19 +320,239 @@ footer{
 
 
 
+  .all{
+    display: flex;
+    flex-direction: row;
+  }
+  .row1{
+      width:25%;
+      margin: 20px ;
+  }
+  .our-team {
+    padding: 30px 0 40px;
+    margin-bottom: 30px;
+    background-color: #f7f5ec;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .our-team .picture {
+    display: inline-block;
+    height: 130px;
+    width: 130px;
+    margin-bottom: 50px;
+    z-index: 1;
+    position: relative;
+  }
+  
+  .our-team .picture::before {
+    content: "";
+    width: 100%;
+    height: 0;
+    border-radius: 50%;
+    background-color: #ff7200;
+    position: absolute;
+    bottom: 135%;
+    right: 0;
+    left: 0;
+    opacity: 0.9;
+    transform: scale(3);
+    transition: all 0.3s linear 0s;
+  }
+  
+  .our-team:hover .picture::before {
+    height: 100%;
+  }
+  
+  .our-team .picture::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #ff7200;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  .our-team .picture img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    transform: scale(1);
+    transition: all 0.9s ease 0s;
+  }
+  
+  .our-team:hover .picture img {
+    box-shadow: 0 0 0 14px #f7f5ec;
+    transform: scale(0.7);
+  }
+  
+  .our-team .title {
+    display: block;
+    font-size: 15px;
+    color: #4e5052;
+    text-transform: capitalize;
+  }
+  
+  .our-team .social {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #1369ce;
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    transition: all 0.5s ease 0s;
+  }
+  
+  .our-team:hover .social {
+    bottom: 0;
+  }
+  
+  .our-team .social li {
+    display: inline-block;
+  }
+  
+  .our-team .social li a {
+    display: block;
+    padding: 10px;
+    font-size: 17px;
+    color: white;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+  }
+  
+  .our-team .social li a:hover {
+    color: #1369ce;
+    background-color: #f7f5ec;
+  }
+  
+
+
+
+
+
+.sectionClass {
+    padding: 20px 0px 50px 0px;
+    position: relative;
+    display: block;
+  }
+  
+  .fullWidth {
+    width: 100% !important;
+    display: table;
+    float: none;
+    padding: 0;
+    min-height: 1px;
+    height: 100%;
+    position: relative;
+  }
+  
+  
+  .sectiontitle {
+    background-position: center;
+    margin: 30px 0 0px;
+    text-align: center;
+    min-height: 20px;
+  }
+  
+  .sectiontitle h2 {
+    font-size: 30px;
+    color: #222;
+    margin-bottom: 0px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  
+  
+  .headerLine {
+    width: 160px;
+    height: 2px;
+    display: inline-block;
+    background: #101F2E;
+  }
+  
+  
+  .projectFactsWrap{
+      display: flex;
+    margin-top: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  
+  #projectFacts .fullWidth{
+    padding: 0;
+  }
+  
+  .projectFactsWrap .item{
+    width: 25%;
+    height: 100%;
+    padding: 50px 0px;
+    text-align: center;
+    border: 1px solid white;
+  }
+  
+  .projectFactsWrap .item{
+    background:black;
+  }
+  
+  
+  .projectFactsWrap .item p.number{
+    font-size: 40px;
+    padding: 0;
+    font-weight: bold;
+  }
+  
+  .projectFactsWrap .item p{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 18px;
+    margin: 0;
+    padding: 10px;
+    font-family: 'Open Sans';
+  }
+  
+  
+  .projectFactsWrap .item span{
+    width: 60px;
+    background: rgba(255, 255, 255, 0.8);
+    height: 2px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  
+  .projectFactsWrap .item i{
+    vertical-align: middle;
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  
+  .projectFactsWrap .item:hover i, .projectFactsWrap .item:hover p{
+    color: #ff7200;
+  }
+  
+  .projectFactsWrap .item:hover span{
+    background: #ff7200;
+  }
+  
+  @media (max-width: 786px){
+    .projectFactsWrap .item {
+       flex: 0 0 50%;
+    }
+  }
+  
   .advantages {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 100px 150px;
+    /* margin: 100px 150px; */
 }
-.advantages h1{
-    display: flex;
-    align-items: center;
-    text-align: center;
-    display: inline;
-    margin-bottom: 100px;
-}
+
 .advantages .item {
     flex: 30%;
     background: #b8b8b2;
@@ -442,7 +560,7 @@ footer{
     align-items: center;
     flex-direction: column;
     padding: 50px;
-    margin: 0 20px;
+    margin: 20px;
     width: 100%;
 }
 .advantages .item h4{
@@ -459,13 +577,14 @@ footer{
 }
 .advantages .items{
     display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    margin: 0 50px;
+    justify-content:space-around;
+    flex-wrap: wrap;
+   
 }
 .advantages .items .ITEM{
-    background-color: #FFCA00;
+    background-color: #ff7200;
 }
+
 
 
 
@@ -473,52 +592,28 @@ footer{
 
   
 @media only screen and (max-width: 768px) {
-    .nav-menu {
-        position: fixed;
-        left: -100%;
-        top: 4rem;
-        /* bottom: 50%; */
-        z-index: 999;
-        flex-direction: column;
-        background-color: #fff;
-        width: 100%;
-        /* border-radius: 10px; */
-        text-align: center;
-        transition: 0.3s;
-        box-shadow:
-            0 10px 27px rgba(0, 0, 0, 0.05);
-    }
-    .nav-link{
-        font-size: 1.6rem;
-        font-weight: 400;
-        color: #000;
-    }
-    .nav-link:hover{
-        font-size: 1.8rem;
-        font-weight: 400;
-        color: #ff7200;
-    }
-
-    .nav-menu.active {
-        left: 0;
-    }
-
-    .nav-item {
-        margin: 2.5rem 0;
-    }
-
-    .hamburger {
-        color: white;
-        background: white;
-        display: block;
-        cursor: pointer;
-    }
     .content h1{
         font-size: 30px;
     }
     .content span{
         font-size: 40px;
     }
+    .section2 h1{
+        font-size: 30px;
+    }
+    
+    .sectionClass h1{
+        font-size: 30px;
+    }
+   
+    .advantages h1{
+        font-size: 30px;
+    }
+    .container h1{
+        font-size: 30px;
+    }
+    
+
     .body .content{
         top:10%;
     }
@@ -528,18 +623,21 @@ footer{
     .section2 h1{
         font-size: 30px;
     }
-    .advantages {
-        margin: 40px 40px  40px 0px;
+    .all{
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
     }
-    .advantages h1{
-        margin-bottom: 40px;
+    .row1{
+        width: 90%;
     }
-    .advantages .item {
-        padding: 20px;
-        margin: 10px 0px;
+    .advantages{
+        flex-direction: column;
     }
-    .advantages .item img {
-        width: 80px;
+    .advantages .adv{
+        width: 90%;
     }
     
 }
