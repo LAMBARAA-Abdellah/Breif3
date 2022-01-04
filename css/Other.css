@@ -190,6 +190,9 @@ footer{
         display: block;
         cursor: pointer;
     }
+    .footer-bottom {
+        margin-top: -40px;
+    }
     /*fin header*/
     
 }
